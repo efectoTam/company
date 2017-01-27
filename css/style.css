@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+.container, .left, .right, .left-body, .left-fullname {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.container, .left, .right{
+	height: 600px;
+}
+
+.container{
+	padding: 20px 50px;
+}
+
+.left, .right {
+	order: 1;
+	align-self: auto;
+	min-width: 0;
+	min-height: 100%;
+}
+
+.left {
+	flex: 1 1 70%;
+	display: flex;
+	flex-flow: column;
+}
+
+.left-header, .left-body, .left-footer {
+	min-width: 100%;
+}
+
+.left-header, .left-footer {
+	flex: 1 1 10%;
+}
+
+.left-body {
+	flex: 1 1 80%;
+	display: flex;
+	flex-flow: column;
+}
+
+.left-form {
+	flex: 1 1 25%;
+	width: 100%;
+	flex-direction: row;
+	display: flex;
+
+}
+
+.left-fullname {
+	flex: 1 1 50%;
+	flex-direction: column;
+}
+
+.left-mail{
+	flex-direction: row;
+}
+
+.text-top {
+	width: 100%;
+	margin-top: 0px;
+	font-size: 12px;
+}
+
+.input-area {
+	width: 80%;
+	align-self: flex-start;
+	height: 50px;
+}
+
+.area-large{
+	width: 90%;
+}
+
+.left-footer{
+	padding: auto;
+}
+
+.right {
+	flex: 1 1 30%;
+	flex-flow: column;
+	max-height: 100%;
+	display: flex;
+}
+
+.right-header, .right-body, .right-footer {
+	min-width: 100%;
+}
+
+.right-header, .right-footer {
+	flex: 1 1 10%;
+	background-color: blue;
+}
+
+.right-body {
+	flex: 1 1 80%;
+	background-color: yellow;
+}
+
+.title{
+	font-weight: normal;
+	margin-top: 0px;
+}
