@@ -5,11 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="main-container">
 		<div class="left">
 			<div class="left-header">
 				<h1 class="title">Personal Information</h1>
@@ -17,57 +19,60 @@
 			<div class="left-body">
 				<div class="left-form">
 					<div class="left-fullname name">
-						<p class="text-top">First Name:</p>
+						<p class="text-small">First Name:</p>
 						<input type="text" name="first-name" class="input-area">
 					</div>
 					<div class="left-fullname lastname">
-						<p class="text-top">Last Name:</p>
+						<p class="text-small">Last Name:</p>
 						<input type="text" name="last-name" class="input-area">
 					</div>
 				</div>
 				<div class="left-form">
 					<div class="left-fullname">
-						<p class="text-top">Email Address</p>
+						<p class="text-small">Email Address</p>
 						<input type="text" name="first-name" class="input-area area-large">
-						<i></i>
+						<span class="icon-envelop icon-small"></span>
 					</div>
 				</div>
 				<div class="left-form">
 					<div class="left-fullname">
-						<p class="text-top">Phone Number</p>
+						<p class="text-small">Phone Number</p>
 						<input type="text" name="first-name" class="input-area area-large">
-						<i></i>
+						<span class="icon-phone icon-small"></span>
 					</div>
 				</div>
 				<div class="left-form">
 					<div class="left-fullname">
-						<p class="text-top">Where are you from?</p>
+						<p class="text-small">Where are you from?</p>
 						<input type="text" name="first-name" class="input-area area-large">
 					</div>
 				</div>
 			</div>
 			<div class="left-footer">
-				<button class="button-next">NEXT STEP</button>
-				<i></i>
+				<button class="button-next">NEXT STEP<span class="icon-circle-right icon-small icon-button"></span></button>
 			</div>
 		</div>
 		<div class="right">
-			<div class="right-header">
-				<div class="section">
-					<button>1</button>
-					<button>2</button>
-					<button>3</button>
-					<button>4</button>
+			<div class="right-header text-center">
+				<div class="steps">
+					<button class="step-button step-selected">1</button>
+					<button class="step-button">2</button>
+					<button class="step-button">3</button>
+					<button class="step-button">4</button>
 				</div>
 			</div>
+			<hr>
 			<div class="right-body">
-				<div class="information">
-					hola
+				<div class="text-center">
+					<span class="icon-address-book icon-large"></span>
+					<p class="text-large">Personal Information</p>
+					<p class="text-small">Fill out the form on the left. You can always edit the data in the setting menu.</p>
 				</div>
 			</div>
-			<div class="right-footer">
-				<p>(330) 123 4567</p>
-				<p>help@gmail.com</p>
+			<hr>
+			<div class="right-footer text-center">
+				<p class="text-small">(330) 123 4567</p>
+				<p class="text-small">help@gmail.com</p>
 			</div>
 		</div>
 	</div>

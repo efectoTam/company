@@ -4,7 +4,11 @@
 	box-sizing: border-box;
 }
 
-.container, .left, .right, .left-body, .left-fullname {
+body{
+	background-color: whitesmoke;
+}
+
+.main-container, .left, .right, .left-body, .left-fullname {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -12,12 +16,13 @@
 	align-items: center;
 }
 
-.container, .left, .right{
+.main-container, .left, .right{
 	height: 600px;
 }
 
-.container{
-	padding: 20px 50px;
+.main-container{
+	margin: 20px 40px;
+	background-color: #fff;
 }
 
 .left, .right {
@@ -25,13 +30,14 @@
 	align-self: auto;
 	min-width: 0;
 	min-height: 100%;
+	padding: 30px 50px;
 }
 
 .left {
 	flex: 1 1 70%;
 	display: flex;
 	flex-flow: column;
-	padding-right: 40px;
+	padding-right: 25px;
 }
 
 .left-header, .left-body, .left-footer {
@@ -61,6 +67,15 @@
 	flex-direction: column;
 }
 
+.icon-small{
+	font-size: 20px;
+	margin-top: 10px;
+	padding-right: 10px;
+	position: absolute;
+	align-self: flex-end;
+	color: grey;
+}
+
 .name {
 	padding-right: 20px;
 }
@@ -71,12 +86,14 @@
 
 .left-mail{
 	flex-direction: row;
+	align-self: flex-end;
 }
 
-.text-top {
+.text-small {
 	width: 100%;
 	margin-top: 0px;
-	font-size: 12px;
+	font-size: 13px;
+	color: grey;
 }
 
 .input-area {
@@ -91,6 +108,20 @@
 
 .button-next {
 	float: right;
+	border-radius: 30px;
+	padding: 10px 20px;
+	padding-right: 50px;
+	text-decoration: none;
+	border: 0px;
+	background-color: #5e9af9;
+	color: #fff;
+}
+
+.icon-button {
+	margin-top: 0px;
+	margin-left: 10px;
+	font-size: 15px;
+	color: #fff;
 }
 
 .right {
@@ -98,42 +129,61 @@
 	flex-flow: column;
 	max-height: 100%;
 	display: flex;
+	padding-left: 25px;
 }
 
 .right-header, .right-body, .right-footer {
 	min-width: 100%;
 }
 
+hr {
+	text-align: center;
+    border-bottom: 3px solid grey;
+    width: 15%;
+}
+
 .right-header, .right-footer {
 	flex: 1 1 10%;
-	background-color: blue;
 }
 
-.rigth-header{
+.steps {
 	text-align: center;
-}
-
-.section {
-	text-align: center;
-	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.step-button {
+	background-color: #fff;
+	border: none;
+}
+
+.step-selected {
+	border: 2px solid #5e9af9;
+	border-radius: 50%;
+	padding: 5px 10px;
 }
 
 .right-body {
 	flex: 1 1 80%;
-	background-color: yellow;
-	padding: 90px 30px;
+	padding: 90px 0px;
 	display: flex;
+	width: 100%;
 }
 
-.information{
+.icon-large {
+	font-size: 50px;
+	color: #5e9af9;
+}
 
+.text-large {
+	margin-top: 10px;
+	font-size: 15px;
 }
 
 .right-footer {
-	text-align: center;
+	width: 100%;
 }
 
 .title {
 	font-weight: normal;
+	margin-top: 0px;
 }
