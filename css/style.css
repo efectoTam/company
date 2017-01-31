@@ -26,9 +26,6 @@ body{
 .wizard-content {
 	flex: 1;
 }
-.wizard-aside {
-	width: 300px;
-}
 
 .block-content,
 .block-aside {
@@ -38,7 +35,14 @@ body{
 .block-aside {
 	text-align: center;
 	display: flex;
-	border-left: 1px solid black;
+	width: 300px;
+}
+
+.block-aside:before {
+	content: "";
+	background: linear-gradient(to right, white, whitesmoke);
+	width: 20px;
+	max-height: 100%;
 }
 
 .panel {
