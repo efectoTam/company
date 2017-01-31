@@ -106,17 +106,14 @@ body{
 	border: 0px;
 	background-color: #fff;
 	float: right;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .button-primary {
 	background-color: #5e9af9;
 	color: #fff;
-}
-
-hr {
-	text-align: center;
-    border-bottom: 3px solid grey;
-    width: 15%;
+	padding-right: 50px;
 }
 
 .step-button {
@@ -128,8 +125,8 @@ hr {
 
 .step-selected {
  	border-color: #5e9af9;
+ 	color: #5e9af9;
 }
-
 
 /* UTILITIES */
 
